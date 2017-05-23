@@ -12,7 +12,7 @@ fri <- melt(fri, id.var = 'Year')
 
 ggplot(fri, aes(variable, Year)) +
 	geom_tile(aes(fill = value)) +
-	geom_tile(aes(fill = value), colour = "black", show_guide=FALSE)  +
+	geom_tile(aes(fill = value), colour = "black", show.legend=FALSE)  +
 	scale_fill_manual(values=c("grey", "red"), guide_legend(title="")) +
 	theme_few(base_size=10)+
 	labs(title = "The Distribution of Friday the 13th's Over the Last 30 Years")+
